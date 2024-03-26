@@ -1,0 +1,4 @@
+CREATE schema IF NOT EXISTS massFoodies;
+use massFoodies;
+Create table IF NOT EXISTS recipes (id int not null, recipeTags longtext,recipeTitle longtext, ingreidents Longtext,instructions longtext, authorId int,cost int,tasteScore int,primary key (id));
+Create table IF NOT EXISTS accounts (id int not null, name longtext, email longtext, averageTasteScore int,privalge VarChar(5),password longtext,primary key (id));
